@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'imganalyzer.apps.ImganalyzerConfig', # refers to imganalyzer/apps.py
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -77,8 +78,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'goodapple',
-		'USER': 'postgres', # pgadmin only 
-		'PASSWORD': 'postgres', # pgadmin only
+		# 'USER': 'postgres', # pgadmin only 
+		# 'PASSWORD': 'postgres', # pgadmin only
         'HOST': '127.0.0.1',
         'PORT': '5432',
     }
