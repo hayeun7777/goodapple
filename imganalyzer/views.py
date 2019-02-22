@@ -78,16 +78,10 @@ def home(request):
 			rating = analyze_picture(uploadedPhoto) # function for the comparison
 			print(rating)
 			# return redirect('imganalyzer:result', rating=4, img_string="hey")
-			return render(request, 'apple/result.html', {'img_string': 'http://placekitten.com/200/300', 'rating': 5})
+			return render(request, 'apple/result.html', {'img_string': uploadedPhoto, 'rating': rating})
 		else:
 			print('bruh')
 	return render(request, 'apple/home.html')
 
 def details(request):
 	return render(request, 'apple/details.html')
-
-# Materialize navbar
-def show_page(request):
-	context = NavView.get_context(request, title="My Page")
-	context["object"] = "MyObject"
-	return render(request, "apple/home.html", context)

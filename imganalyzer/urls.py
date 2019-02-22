@@ -8,7 +8,6 @@ app_name = 'imganalyzer'
 urlpatterns = [
     path('', views.index),
     path('home', views.home, name='home'),
-    # path('result/<int:rating>/<string>$', views.result, name='result'),
     path('details', views.details, name='details'),
 ]
 

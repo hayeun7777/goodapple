@@ -15,9 +15,9 @@
 <body>
     <nav class="nav">
             <div class="nav-wrapper">
-                <a href="#" class="brand-logo center"><img src="https://files.slack.com/files-pri/T0351JZQ0-FGDRX84G2/white_logo.png" class="logoimg"></a>
+                <a href="/home" class="brand-logo center"><img src="https://files.slack.com/files-pri/T0351JZQ0-FGDRX84G2/white_logo.png" class="logoimg"></a>
                 <ul id="nav-mobile" class="left hide-on-med-and-down">
-                <li><a href="#">Check Apple</a></li>
+                <li><a href="/home">Check Apple</a></li>
                 <li><a href="#">Sustainability</a></li>
                 <li><a href="#">Food & Safety Resources</a></li>
                 <li><a href="#">About Us</a></li>
@@ -25,18 +25,22 @@
             </div>
     </nav>
     <div class="main-wrapper">
-        <h2>{{img_string}}</h2>
-        {% if goodapple %}
-            <h4 class="goodApple">Good Apple</h4>
-            <h3>{{ rating }}/5</h3>
-            <p> Enjoy your food!👍</p>
+        <img src={{img_string}} id="imgwrapper" />
+        {% if rating > 4 %}
+            <h4>Great Apple</h4>
+            <h3 id="greatApple">{{ rating }}/5</h3>
+            <h6> Enjoy your food!👍</h6>
+        {% elif rating > 2 %}
+            <h4>Good Apple</h4>
+            <h3 id="goodApple">{{ rating }}/5</h3>
+            <h6>Edible</h6>
         {% else %}
-            <h4 class="badApple">Bad Apple</h4>
-            <h3>{{ rating }}/5</h3>
-            <p> It's unhealthy, throw it out</p>
+            <h4>Bad Apple</h4>
+            <h3 id="badApple">{{ rating }}/5</h3>
+            <h6> It's unhealthy, throw it out!</h6>
         {% endif %}
         <div class="appleResult">
-            <p>Enjoy your tasty treat! <a href="#">Learn more?</a></p>
+            <p>Enjoy your tasty treat! <a href="/details">Learn more?</a></p>
         </div>
     </div>
     <footer>
