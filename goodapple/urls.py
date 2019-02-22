@@ -18,6 +18,7 @@ from django.urls import path, include
 from imganalyzer import views
 
 urlpatterns = [
-    path('apple/', include('imganalyzer.urls')),
+    path('', include('imganalyzer.urls')),
+    # path('apple/', include('imganalyzer.urls')),
     path('admin/', admin.site.urls),
 ]

@@ -1,0 +1,19 @@
+body{
+  background-color: #E8D6CB;
+  font-family: 'Amaranth', sans-serif;
+}
+
+.button{
+  background-color:#809EA1;
+  color: white;
+  font-family: 'Amaranth', sans-serif;
+  padding: 0 10px;
+  border: solid 2px black;
+  border-radius: 5px;
+}
+
+.uploadzone{
+  background-color: #E4B363;
+  border-radius: 5px;
+  padding: 10px 10px;
+}
