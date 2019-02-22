@@ -1,0 +1,47 @@
+body{
+  background: repeating-linear-gradient(to right, #FFF9E8, #FFF9E8 15px, #FF7AB8 15px,  #FF7AB8 25px);
+  font-family: 'Amaranth', sans-serif;
+  text-align: center;
+}
+
+img{
+  height: 200px;
+}
+
+nav{
+  background-color:#FFF9E8;
+}
+
+ul {
+  list-style-type: none;
+}
+
+footer{
+  background-color:#FFF9E8;
+}
+
+.button{
+  background-color:#809EA1;
+  color: white;
+  font-family: 'Amaranth', sans-serif;
+  padding: 0 10px;
+  border: solid 2px black;
+  border-radius: 5px;
+}
+
+.uploadzone{
+  height: 500px;
+  width: 500px;
+  margin: 0 auto;
+  background-color:white;
+  border-radius: 5px;
+  padding: 10px 10px;
+}
+
+.wrapper{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
