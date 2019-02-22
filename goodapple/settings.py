@@ -27,11 +27,12 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
 # Application definition
 
 INSTALLED_APPS = [
     'imganalyzer.apps.ImganalyzerConfig', # refers to imganalyzer/apps.py
+    'materialize',
+    "materialize_nav",
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

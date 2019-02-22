@@ -1,6 +1,23 @@
 body{
-  background-color: #E8D6CB;
+  background: repeating-linear-gradient(to right, #FFF9E8, #FFF9E8 15px, #FF7AB8 15px,  #FF7AB8 25px);
   font-family: 'Amaranth', sans-serif;
+  text-align: center;
+}
+
+img{
+  height: 200px;
+}
+
+nav{
+  background-color:#FFF9E8;
+}
+
+ul {
+  list-style-type: none;
+}
+
+footer{
+  background-color:#FFF9E8;
 }
 
 .button{
@@ -13,7 +30,18 @@ body{
 }
 
 .uploadzone{
-  background-color: #E4B363;
+  height: 500px;
+  width: 500px;
+  margin: 0 auto;
+  background-color:white;
   border-radius: 5px;
   padding: 10px 10px;
 }
+
+.wrapper{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
