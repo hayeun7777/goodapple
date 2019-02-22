@@ -1,6 +1,6 @@
 body{
-  background-color: #FFFFFF;
-  font-family: 'Amaranth', sans-serif;
+  background-color: #D6EFFC;
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
 }
 
@@ -28,6 +28,10 @@ footer{
   font-size: 14px;
 }
 
+.main-wrapper{
+  background-color: white;
+  margin: 0 29px;
+}
 .uploadbtn{
   background: transparent;
   position: absolute;
@@ -38,7 +42,7 @@ footer{
 .button{
   background-color:#DF3D36;
   color: white;
-  font-family: 'Amaranth', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   padding: 10 20px;
   margin: 10px;
   border-radius: 10px;
@@ -49,7 +53,7 @@ footer{
   height: 300px;
   width: 300px;
   margin: 0 auto;
-  background-color: #D3E1F5;
+  background-color: #D8D8D8;
   border-radius: 5px;
   padding: 10px 10px;
 }
@@ -65,5 +69,9 @@ footer{
   justify-content: center;
   margin: 0 auto;
   text-align: center;
+}
+
+.goodApple, .badApple {
+  font-family: 'Montserrat', sans-serif;
 }
 
