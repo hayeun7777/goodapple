@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect
+from django.urls import reverse
 from django.http import HttpResponse
 from django.core.files.storage import FileSystemStorage
 from materialize_nav import NavView
@@ -76,13 +77,11 @@ def home(request):
 			uploadedPhoto = 'media/' + uploaded_img.name
 			rating = analyze_picture(uploadedPhoto) # function for the comparison
 			print(rating)
-			return redirect('result', img_string="http://placekitten.com/200/300")
+			# return redirect('imganalyzer:result', rating=4, img_string="hey")
+			return render(request, 'apple/result.html', {'img_string': 'http://placekitten.com/200/300', 'rating': 5})
 		else:
 			print('bruh')
 	return render(request, 'apple/home.html')
-
-def result(request, img_string):
-	return render(request, 'apple/result.html', {'img_string': "http://placekitten.com/200/300"})
 
 def details(request):
 	return render(request, 'apple/details.html')
