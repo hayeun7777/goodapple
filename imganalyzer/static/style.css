@@ -8,6 +8,10 @@ img{
   height: 200px;
 }
 
+#imgwrapper{
+  margin: 20px 0 0 0;
+}
+
 .logoimg{
   height: 60px;
   margin: 0 auto;
@@ -27,7 +31,6 @@ footer{
   background-color:#DF3D36;
   font-size: 14px;
 }
-
 .main-wrapper{
   background-color: white;
   margin: 0 29px;
@@ -38,7 +41,6 @@ footer{
   top: 65%;
   left: 20%
 }
-
 .button{
   background-color:#DF3D36;
   color: white;
@@ -70,8 +72,17 @@ footer{
   margin: 0 auto;
   text-align: center;
 }
-
-.goodApple, .badApple {
+#greatApple{
   font-family: 'Montserrat', sans-serif;
+  color: green;
 }
 
+#goodApple {
+  font-family: 'Montserrat', sans-serif;
+  color: orange;
+}
+
+#badApple {
+  font-family: 'Montserrat', sans-serif;
+  color: red;
+}
