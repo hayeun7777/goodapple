@@ -5,11 +5,10 @@ from django.conf.urls.static import static
 from . import views
 
 app_name = 'imganalyzer'
-
 urlpatterns = [
     path('', views.index),
     path('home', views.home, name='home'),
-    path('result', views.result, name='result'),
+    # path('result/<int:rating>/<string>$', views.result, name='result'),
     path('details', views.details, name='details'),
 ]
 
