@@ -28,14 +28,13 @@ def analyze_picture(imagePath):
 	# load the image
 	image = cv2.imread(imagePath)
 	orig = image.copy()
-
+	
 	# pre-process the image for classification
 	image = cv2.resize(image, (28, 28))
 	image = image.astype("float") / 255.0
 	image = img_to_array(image)
 	image = np.expand_dims(image, axis=0)
 	print('pass')
-
 	# classify the input image
 	# "apple_good" specifies the probability the apple is "good"
 	# "apple_bad" specifies the probability the apple is "bad"

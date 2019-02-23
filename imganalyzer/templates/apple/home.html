@@ -17,7 +17,7 @@
         <div class="nav-wrapper">
             <a href="/home" class="brand-logo center"><img src="https://files.slack.com/files-pri/T0351JZQ0-FGDRX84G2/white_logo.png" class="logoimg"></a>
             <ul id="nav-mobile" class="left hide-on-med-and-down">
-            <li><a href="/home">Check Apple</a></li>
+            <li><a href="/home">Check Food</a></li>
             <li><a href="#">Sustainability</a></li>
             <li><a href="#">Food & Safety Resources</a></li>
             <li><a href="#">About Us</a></li>
@@ -25,8 +25,8 @@
         </div>
     </nav>
     <div class="main-wrapper">
-        <h4>Is your apple ready to eat? Or is it a little past it's prime?</h4>
-        <h5>Upload a photo of your apple and let us analyze it for you!</h5>
+        <h4>Is your food ready to eat? Or is it a little past it's prime?</h4>
+        <h5>Upload a photo of your food and let us analyze it for you!</h5>
         <div>
             <form method="POST" enctype="multipart/form-data">
                 {% csrf_token %}
@@ -34,7 +34,7 @@
                     <i class="material-icons medium" id="uploadicon">file_upload</i>
                     <input class="uploadbtn" type="file" name="photo">
                 </div>
-                <input class="button" type="submit" value="CHECK MY APPLE">
+                <input class="button" type="submit" value="CHECK MY FOOD">
             </form> 
         </div>
     </div>
